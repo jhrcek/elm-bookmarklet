@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Embedding Elm in HTML!</title>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+
+  <body>
+    <div id="elm"/>
+    <script type="text/javascript">
+    var node = document.getElementById('elm');
+    var app = Elm.Main.embed(node, {currentUrl: window.location.href});
+    </script>
+  </body>
+</html>
